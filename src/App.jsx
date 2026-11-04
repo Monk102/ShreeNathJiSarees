@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import StoreHighlights from './components/StoreHighlights';
@@ -164,6 +165,9 @@ export default function App() {
 
       {/* Sticky Mobile/Desktop Action Buttons */}
       <FloatingActions language={language} />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
 
     </div>
   );
